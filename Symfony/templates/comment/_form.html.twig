@@ -1,0 +1,40 @@
+
+
+{{ form_start(form) }}
+    
+  
+
+
+
+
+
+ <div class="col-lg-6">
+              <div class="row">
+              <div class="form-control" >
+                <div class="col-md-6 form-group">
+                           <h6>E-mail :
+{{ form_widget(form.email) }}
+                </div>
+</div>
+
+                <div class="form-control" >
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                           <h6>Auteur :
+
+{{ form_widget(form.auteur) }}
+
+                </div>
+              </div>
+              <div class="form-control" >
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+           <h6>Comment :
+             {{ form_widget(form.comment) }}
+
+              </div>
+              </div>
+              <div class="text-center">
+                <button class="button1" >{{ button_label|default('Save') }}</button>
+              </div>
+          
+        </div>
+             {{ form_end(form) }}

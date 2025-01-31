@@ -1,0 +1,63 @@
+{% extends 'front.html.twig' %}
+
+{% block labo %}
+   <h1 style="color:Teal;">
+    Les Analyse au niveau du Labo "{{ labo.nom }}" :
+  </h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Date
+        </th>
+        <th>
+          Resultat
+        </th>
+        <th>
+          PDF
+        </th>
+        <th>
+          Prix
+        </th>
+        <th>
+          Labo
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for analyse in labo.analyses %}
+        <tr>
+          <td>
+            {{ analyse.getId() }}
+          </td>
+          <td>
+            {{ analyse.getDate() }}
+          </td>
+          <td>
+            {{ analyse.getResultat() }}
+          </td>
+          <td>
+            <a href="{{ asset('pdfA/' ~ analyse.getImage()) }}">Voir PDF</a>
+          </td>
+          <td>
+            {{ analyse.getPrix() }}
+          </td>
+          <td>
+            {{ analyse.getLaboo() }}
+          </td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="6">
+            no records found
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

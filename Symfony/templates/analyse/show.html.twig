@@ -1,0 +1,71 @@
+{% extends 'back.html.twig' %}
+
+
+
+{% block labo %}
+   <h1 style="color:DarkBlue;">
+    Analyses
+  </h1>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>
+          Id
+        </th>
+        <td>
+          {{ analyse.id }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Date
+        </th>
+        <td>
+          {{ analyse.date }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Resultat
+        </th>
+        <td>
+          {{ analyse.resultat }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          PDF
+        </th>
+        <td>
+          <a href="{{ asset('pdfA/' ~ analyse.image) }}">Voir PDF</a>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Prix
+        </th>
+        <td>
+          {{ analyse.prix }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a class="buttonV" href="{{
+    path(
+      'app_analyse_edit',
+      {
+        id: analyse.id
+      }
+    )
+    }}">
+    Modifier
+  </a>
+
+  {{ include('analyse/_delete_form.html.twig') }}
+
+  <a href="{{ path('app_analyse_index') }}">Retour à la liste</a>
+
+{% endblock %}

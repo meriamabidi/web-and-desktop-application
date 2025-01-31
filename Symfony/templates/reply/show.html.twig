@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<title>Reply</title>
+
+{% block body %}
+    <h1>Reply</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reply.id }}</td>
+            </tr>
+            <tr>
+                <th>Reponse</th>
+                <td>{{ reply.reponse }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ reply.nom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_reply_index') }}">back to list</a>
+
+    <a href="{{ path('app_reply_edit', {'id': reply.id}) }}">edit</a>
+
+    {{ include('reply/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends 'back.html.twig' %}
+
+{% block labo %}
+  <h1 style="color:DarkBlue;">
+    Labo
+  </h1>
+<br>
+<a class="button2"
+              href="{{
+              path(
+                'labo_pdf'
+              )
+              }}">
+              telecharger pdf
+            </a>
+            <br>
+            
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Nom
+        </th>
+        <th>
+          Bloc
+        </th>
+        <th>
+          Mail
+        </th>
+        <th>
+          Tel
+        </th>
+        <th>
+          Med
+        </th>
+        <th>
+          Image
+        </th>
+        <th>
+          actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for labo in labos %}
+        <tr>
+          <td>
+            {{ labo.id }}
+          </td>
+          <td>
+            {{ labo.nom }}
+          </td>
+          <td>
+            {{ labo.bloc }}
+          </td>
+          <td>
+            {{ labo.mail }}
+          </td>
+          <td>
+            {{ labo.tel }}
+          </td>
+          <td>
+            {{ labo.med }}
+          </td>
+          <td>
+            <img src="{{ asset('uploads/' ~ labo.img) }}"
+              style="width:100px;height:100px;" />
+          </td>
+          <td>
+            <a class="button2"
+              href="{{
+              path(
+                'app_labo_show',
+                {
+                  id: labo.id
+                }
+              )
+              }}">
+              Details
+            </a><br />
+
+            <br /><a class="button1"
+              href="{{
+              path(
+                'app_labo_edit',
+                {
+                  id: labo.id
+                }
+              )
+              }}">
+              Modifier
+            </a>
+          </td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="8">
+            Aucun enregistrement trouvé
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <a href="{{ path('app_labo_new') }}">Créer un nouveau</a>
+
+  
+
+  
+{% endblock %}

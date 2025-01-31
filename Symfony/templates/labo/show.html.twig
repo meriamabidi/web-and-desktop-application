@@ -1,0 +1,88 @@
+{% extends 'back.html.twig' %}
+
+
+
+{% block labo %}
+   <h2 style="color:DarkBlue;">
+    Details du Laboratoire : 
+  </h2>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>
+          Id
+        </th>
+        <td>
+          {{ labo.id }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Nom
+        </th>
+        <td>
+          {{ labo.nom }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Bloc
+        </th>
+        <td>
+          {{ labo.bloc }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Mail
+        </th>
+        <td>
+          {{ labo.mail }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Tel
+        </th>
+        <td>
+          {{ labo.tel }}
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Image
+        </th>
+        <td>
+          <img src="{{ asset('uploads/' ~ labo.img) }}"
+            style="width:100px;height:100px;" />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Med
+        </th>
+        <td>
+          {{ labo.med }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a class="buttonV" href="{{
+    path(
+      'app_labo_edit',
+      {
+        id: labo.id
+      }
+    )
+    }}">
+    Modifier
+  </a>
+
+  {{ include('labo/_delete_form.html.twig') }}
+  
+  <a href="{{ path('app_labo_index') }}">back to list</a>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'back.html.twig' %}
+
+{% block title %}Modifier Analyse{% endblock %}
+
+{% block labo %}
+     <h1 style="color:DarkBlue;">Modifier Analyse</h1>
+
+    {{ include('analyse/_form.html.twig', {'button_label': 'Modifier'}) }}
+    {{ include('analyse/_delete_form.html.twig') }}
+
+    
+
+    
+    <a href="{{ path('app_analyse_index') }}">Retour à la liste</a>
+{% endblock %}

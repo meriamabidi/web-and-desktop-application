@@ -1,0 +1,11 @@
+{% extends 'back.html.twig' %}
+
+{% block title %}New Labo{% endblock %}
+
+{% block labo %}
+     <h1 style="color:DarkBlue;">Créer un nouveau Labo</h1>
+
+    {{ include('labo/_form.html.twig') }}
+
+    <a href="{{ path('app_labo_index') }}">retour à la liste</a>
+{% endblock %}

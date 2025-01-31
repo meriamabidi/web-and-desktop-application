@@ -1,0 +1,106 @@
+{% extends 'front.html.twig' %}
+
+
+
+{% block labo %}
+  <h1 style="color:Teal;">
+    Les Laboratoires disponible :  
+  </h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Nom
+        </th>
+        <th>
+          Bloc
+        </th>
+        <th>
+          Mail
+        </th>
+        <th>
+          Tel
+        </th>
+        <th>
+          Med
+        </th>
+        <th>
+          Image
+        </th>
+         <th>
+          Analyses
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for labo in labos %}
+        <tr>
+          <td>
+            {{ labo.id }}
+          </td>
+          <td>
+            {{ labo.nom }}
+          </td>
+          <td>
+            {{ labo.bloc }}
+          </td>
+          <td>
+            {{ labo.mail }}
+          </td>
+          <td>
+            {{ labo.tel }}
+          </td>
+          <td>
+            {{ labo.med }}
+          </td>
+          <td>
+            <img src="{{ asset('uploads/' ~ labo.img) }}"
+              style="width:100px;height:100px;" />
+          </td>
+          <td>
+          <a href="{{
+              path(
+                'app_show_analyses',
+                {
+                  id: labo.id
+                }
+              )
+              }}">
+              afficher
+            </a>
+          </td>
+        </tr>
+                 <h6> ce labo est note {{labo.getAverageRating() }} / 5 </h6>
+
+      {% else %}
+        <tr>
+          <td colspan="8">
+            Aucun enregistrement trouvé
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+    {{ knp_pagination_render(labos) }}
+    <br>
+    <br>
+
+<h5 style="color:Teal;"> Voulez-vous évaluer ce laboratoire !! </h5>
+    <a class="nav-link collapsed" href="{{ path('app_rating_new') }}">
+          <span>
+click here 
+            </span>
+          </a>
+
+         <h5 style="color:Teal;"> Voulez-vous laisser un commentaire !! </h5>
+    <a class="nav-link collapsed" href="{{ path('app_comment_new') }}">
+          <span>
+click here 
+            </span>
+          </a>
+
+{% endblock %}

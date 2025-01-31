@@ -1,0 +1,54 @@
+{% extends 'back.html.twig' %}
+
+
+{% block labo %}
+    <h1>Tous les commentaires </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Details commentaire</th>
+                <th>Comment</th>
+                <th>Reponse</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for comment in comments %}
+            <tr>
+                <td>{{ comment.id }}</td>
+                <td>
+                
+                {{ comment.dateC ? comment.dateC|date('Y-m-d') : '' }}
+                <br>
+                
+                {{ comment.email }}
+                <br>
+                
+                {{ comment.auteur }}
+                <br>
+                
+               
+                <td>{{ comment.comment }}</td>
+                 </td>
+              
+                <td>
+                {% for reponse in comment.reponse %}
+                {{reponse.getReponse()}}
+                {% endfor %}
+                </td>
+                  <td>
+                        {{ include('comment/_delete_form.html.twig') }}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_reply_new') }}">Ajouter Reponse</a>
+{% endblock %}

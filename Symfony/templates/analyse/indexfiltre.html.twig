@@ -1,0 +1,108 @@
+{% extends 'back.html.twig' %}
+
+
+
+{% block labo %}
+
+  <h1 style="color:DarkBlue;">
+    Analyses
+  </h1>
+
+
+<h10>Price range: <span id="price-range"></span></h10>
+
+{{ form_start(form) }}
+
+<div>
+    <label for="{{ form.priceRange.vars.id }}">Price Range</label>
+    <input type="range"
+           id="{{ form.priceRange.vars.id }}"
+           name="{{ form.priceRange.vars.full_name }}"
+           min="{{ form.priceRange.vars.attr.min }}"
+           max="{{ form.priceRange.vars.attr.max }}"
+           step="{{ form.priceRange.vars.attr.step }}"
+           value="{{ form.priceRange.vars.value }}"
+           onchange="updatePriceRange(this.value)">
+</div>
+
+<button classe="button1" type="submit">filtrer</button>
+
+<script>
+    function updatePriceRange(value) {
+        document.getElementById("price-range").innerHTML = value;
+    }
+</script>
+
+
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Date
+        </th>
+        <th>
+          Resultat
+        </th>
+        <th>
+          PDF
+        </th>
+        <th>
+          Prix
+        </th>
+        <th>
+          Labo
+        </th>
+        <th>
+          actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for analyse in analyses %}
+        <tr>
+          <td>
+            {{ analyse.id }}
+          </td>
+          <td>
+            {{ analyse.date }}
+          </td>
+          <td>
+            {{ analyse.resultat }}
+          </td>
+          <td>
+            <a href="{{ asset('pdfA/' ~ analyse.image) }}">Voir PDF </a>
+
+          </td>
+          <td>
+            {{ analyse.prix }}
+          </td>
+          <td>
+            {{ analyse.laboo }}
+          </td>
+          <td>
+            
+            
+          </td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="6">
+            Aucun enregistrement trouvé
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <a href="{{ path('app_analyse_new') }}">Créer un nouveau </a>
+
+  
+
+
+{% endblock %}

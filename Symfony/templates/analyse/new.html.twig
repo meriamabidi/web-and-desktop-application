@@ -1,0 +1,11 @@
+{% extends 'back.html.twig' %}
+
+
+
+{% block labo %}
+     <h1 style="color:DarkBlue;">Créer un nouveau Analyse</h1>
+
+    {{ include('analyse/_form.html.twig') }}
+
+    <a href="{{ path('app_analyse_index') }}">Retour à la liste</a>
+{% endblock %}
