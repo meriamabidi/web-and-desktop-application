@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AnalysesController">
+    <stylesheets>
+        <URL value="@analyses.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="analyseTable" layoutX="89.0" layoutY="300.0" onMouseClicked="#MouseActionAnalyse" prefHeight="200.0" prefWidth="634.0" styleClass="mainFxmlClass">
+         <columns>
+            <TableColumn fx:id="resultat_col" prefWidth="112.79995727539062" text="resultat" />
+            <TableColumn fx:id="date_col" prefWidth="172.79991149902344" text="date" />
+            <TableColumn fx:id="prix_col" prefWidth="154.4000244140625" text="prix" />
+            <TableColumn fx:id="labo_col" prefWidth="194.4000244140625" text="labo" />
+            <TableColumn fx:id="pdf_col" minWidth="6.103515625E-5" prefWidth="6.103515625E-5" text="PDF" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="laboratoire" layoutX="331.0" layoutY="158.0" prefWidth="150.0" promptText="laboratoire" styleClass="mainFxmlClass" />
+      <Label fx:id="new_pdf" layoutX="590.0" layoutY="174.0" onMouseClicked="#open_pdf" prefHeight="23.0" prefWidth="126.0" styleClass="mainFxmlClass" text="selectionner pdf" />
+      <Button fx:id="modifierB" layoutX="156.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#update" prefHeight="26.0" prefWidth="106.0" styleClass="insert-button-V" text="Modifier" />
+      <Button fx:id="supprimerB" layoutX="335.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="26.0" prefWidth="106.0" styleClass="insert-button-R" text="supprimer" />
+      <Label fx:id="identifiant" layoutX="58.0" layoutY="77.0" prefHeight="18.0" prefWidth="126.0" style="-fx-text-fill: transparent;" text="identifiant" />
+      <TextField fx:id="resultat" layoutX="42.0" layoutY="157.0" promptText="resultat" styleClass="mainFxmlClass" />
+      <TextField fx:id="prix" layoutX="484.0" layoutY="70.0" promptText="prix" styleClass="mainFxmlClass" />
+      <DatePicker fx:id="date_picker" layoutX="160.0" layoutY="73.0" styleClass="mainFxmlClass" />
+      <Label fx:id="pdf" layoutX="664.0" layoutY="15.0" onMouseClicked="#voir_pdf" style="-fx-text-fill: transparent;" text="aucun PDF selectioneebel" />
+      <Label layoutX="30.0" layoutY="27.0" prefHeight="36.0" prefWidth="240.0" text="Analyses :" textFill="#3195d7">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="laboErreur" layoutX="321.0" layoutY="198.0" prefHeight="22.0" prefWidth="170.0" textFill="RED" />
+      <Label fx:id="resultatErreur" layoutX="68.0" layoutY="198.0" prefHeight="22.0" prefWidth="106.0" textFill="RED" />
+      <Label fx:id="prixErreur" layoutX="514.0" layoutY="111.0" prefHeight="22.0" prefWidth="106.0" textFill="RED" />
+      <Label fx:id="pdfErreur" layoutX="600.0" layoutY="198.0" prefHeight="22.0" prefWidth="106.0" textFill="RED" />
+      <Label fx:id="dateErreur" layoutX="329.0" layoutY="111.0" prefHeight="22.0" prefWidth="154.0" textFill="RED" />
+      <Label fx:id="date_string" layoutX="252.0" layoutY="52.0" style="-fx-text-fill: transparent;" text="Label" />
+      <ComboBox fx:id="choix_tri" layoutX="388.0" layoutY="511.0" onAction="#selectTri" prefHeight="34.0" prefWidth="96.0" promptText="choixTri" styleClass="mainFxmlClass" />
+      <CheckBox fx:id="croiCheckBox" layoutX="121.0" layoutY="517.0" mnemonicParsing="false" text="Croissant" />
+      <CheckBox fx:id="decroiCheckBox" layoutX="230.0" layoutY="517.0" mnemonicParsing="false" text="decroissant" />
+      <Button fx:id="trierB" layoutX="592.0" layoutY="511.0" mnemonicParsing="false" onMouseClicked="#trier_analyse" prefHeight="34.0" prefWidth="96.0" styleClass="mainFxmlClass" text="Trier" />
+      <Label fx:id="choixT_label" layoutX="400.0" layoutY="564.0" style="-fx-text-fill: transparent;" />
+      <Button fx:id="QRcodeB" layoutX="525.0" layoutY="223.0" mnemonicParsing="false" onAction="#generateQR" prefHeight="26.0" prefWidth="106.0" styleClass="insert-button-R" text="QR code" />
+      <Label fx:id="ouvrire" layoutX="614.0" layoutY="146.0" onMouseClicked="#voir_pdf" prefHeight="23.0" prefWidth="78.0" styleClass="mainFxmlClass" text="Ouvrir PDF" />
+      <TextField fx:id="searchField" layoutX="156.0" layoutY="267.0" prefHeight="22.0" prefWidth="476.0" />
+   </children>
+</AnchorPane>

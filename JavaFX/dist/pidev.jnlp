@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="pidev.jnlp">
+  <information>
+    <title>pidev</title>
+    <vendor>Maryem</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\AnimateFX-1.2.4.jar" size="99334" download="eager" />
+    <jar href="lib\JMapViewer-1.14.1-Demo.jar" size="418" download="eager" />
+    <jar href="lib\SparseBitSet-1.2.jar" size="24510" download="eager" />
+    <jar href="lib\annotations-13.0.jar" size="17536" download="eager" />
+    <jar href="lib\ant-1.10.12.jar" size="2254148" download="eager" />
+    <jar href="lib\ant-launcher-1.10.12.jar" size="18705" download="eager" />
+    <jar href="lib\com.mysql.jdbc_5.1.5.jar" size="676712" download="eager" />
+    <jar href="lib\commons-codec-1.15.jar" size="353793" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\commons-compress-1.21.jar" size="1018316" download="eager" />
+    <jar href="lib\commons-io-2.11.0.jar" size="327135" download="eager" />
+    <jar href="lib\commons-math3-3.6.1.jar" size="2213560" download="eager" />
+    <jar href="lib\controlsfx-11.1.2.jar" size="1378379" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\curvesapi-1.07.jar" size="111978" download="eager" />
+    <jar href="lib\error_prone_annotations-2.1.3.jar" size="13704" download="eager" />
+    <jar href="lib\flowless-0.7.0.jar" size="71660" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\fontawesomefx-8.9-sources.jar" size="448716" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.0.jar" size="1662483" download="eager" />
+    <jar href="lib\gluonfx-maven-plugin-1.0.18.jar" size="51492" download="eager" />
+    <jar href="lib\google-maps-services-2.2.0.jar" size="242695" download="eager" />
+    <jar href="lib\graal-sdk-21.1.0.jar" size="579214" download="eager" />
+    <jar href="lib\grpc-context-1.27.2.jar" size="30073" download="eager" />
+    <jar href="lib\gson-2.10.1.jar" size="283367" download="eager" />
+    <jar href="lib\guava-25.1-android.jar" size="2591373" download="eager" />
+    <jar href="lib\hamcrest-core-1.3.jar" size="45024" download="eager" />
+    <jar href="lib\itextpdf-5.4.3-sources.jar" size="2175616" download="eager" />
+    <jar href="lib\itextpdf-5.4.3.jar" size="2070978" download="eager" />
+    <jar href="lib\javafx-base-11-linux.jar" size="750041" download="eager" />
+    <jar href="lib\javafx-base-11-win.jar" size="750040" download="eager" />
+    <jar href="lib\javafx-base-11.jar" size="302" download="eager" />
+    <jar href="lib\javafx-controls-11-linux.jar" size="2511106" download="eager" />
+    <jar href="lib\javafx-controls-11-win.jar" size="2511103" download="eager" />
+    <jar href="lib\javafx-controls-11.jar" size="306" download="eager" />
+    <jar href="lib\javafx-fxml-11-linux.jar" size="127394" download="eager" />
+    <jar href="lib\javafx-fxml-11-win.jar" size="127394" download="eager" />
+    <jar href="lib\javafx-graphics-11-linux.jar" size="4913077" download="eager" />
+    <jar href="lib\javafx-graphics-11-win.jar" size="6016908" download="eager" />
+    <jar href="lib\javafx-graphics-11.jar" size="306" download="eager" />
+    <jar href="lib\javax.mail.jar" size="434923" download="eager" />
+    <jar href="lib\jcommon-1.0.23.jar" size="330246" download="eager" />
+    <jar href="lib\jfoenix-19.0.1.jar" size="2435023" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\jfreechart-1.0.19-demo.jar" size="1437338" download="eager" />
+    <jar href="lib\jfreechart-1.0.19-experimental.jar" size="13796" download="eager" />
+    <jar href="lib\jfreechart-1.0.19-swt.jar" size="79793" download="eager" />
+    <jar href="lib\jfreechart-1.0.19.jar" size="1570157" download="eager" />
+    <jar href="lib\jfreechart-1.5.4.jar" size="1643790" download="eager" />
+    <jar href="lib\jfreesvg-2.0.jar" size="50769" download="eager" />
+    <jar href="lib\jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar" size="4785232" download="eager" />
+    <jar href="lib\jmapviewer-2.8.jar" size="139617" download="eager" />
+    <jar href="lib\junit-4.11.jar" size="245039" download="eager" />
+    <jar href="lib\kotlin-stdlib-1.6.20.jar" size="1509405" download="eager" />
+    <jar href="lib\kotlin-stdlib-common-1.5.31.jar" size="198322" download="eager" />
+    <jar href="lib\kotlin-stdlib-jdk7-1.5.31.jar" size="22986" download="eager" />
+    <jar href="lib\kotlin-stdlib-jdk8-1.5.31.jar" size="16121" download="eager" />
+    <jar href="lib\log4j-1.2-api-2.20.0-sources.jar" size="283233" download="eager" />
+    <jar href="lib\log4j-1.2-api-2.20.0.jar" size="344375" download="eager" />
+    <jar href="lib\log4j-api-2.18.0.jar" size="315115" download="eager" />
+    <jar href="lib\log4j-api-2.20.0-sources.jar" size="272829" download="eager" />
+    <jar href="lib\log4j-api-2.20.0.jar" size="313296" download="eager" />
+    <jar href="lib\log4j-api-test-2.20.0-sources.jar" size="58842" download="eager" />
+    <jar href="lib\log4j-api-test-2.20.0.jar" size="65503" download="eager" />
+    <jar href="lib\log4j-appserver-2.20.0-sources.jar" size="13679" download="eager" />
+    <jar href="lib\log4j-appserver-2.20.0.jar" size="14661" download="eager" />
+    <jar href="lib\log4j-cassandra-2.20.0-sources.jar" size="15332" download="eager" />
+    <jar href="lib\log4j-cassandra-2.20.0.jar" size="22605" download="eager" />
+    <jar href="lib\log4j-core-2.20.0-sources.jar" size="1328033" download="eager" />
+    <jar href="lib\log4j-core-2.20.0.jar" size="1847550" download="eager" />
+    <jar href="lib\log4j-core-test-2.20.0-sources.jar" size="97616" download="eager" />
+    <jar href="lib\log4j-core-test-2.20.0.jar" size="133793" download="eager" />
+    <jar href="lib\log4j-couchdb-2.20.0-sources.jar" size="12139" download="eager" />
+    <jar href="lib\log4j-couchdb-2.20.0.jar" size="14344" download="eager" />
+    <jar href="lib\log4j-docker-2.20.0-sources.jar" size="17274" download="eager" />
+    <jar href="lib\log4j-docker-2.20.0.jar" size="20855" download="eager" />
+    <jar href="lib\log4j-flume-ng-2.20.0-sources.jar" size="36704" download="eager" />
+    <jar href="lib\log4j-flume-ng-2.20.0.jar" size="61144" download="eager" />
+    <jar href="lib\log4j-iostreams-2.20.0-sources.jar" size="42023" download="eager" />
+    <jar href="lib\log4j-iostreams-2.20.0.jar" size="48552" download="eager" />
+    <jar href="lib\log4j-jakarta-smtp-2.20.0-sources.jar" size="12566" download="eager" />
+    <jar href="lib\log4j-jakarta-smtp-2.20.0.jar" size="17567" download="eager" />
+    <jar href="lib\log4j-jakarta-web-2.20.0-sources.jar" size="29372" download="eager" />
+    <jar href="lib\log4j-jakarta-web-2.20.0.jar" size="34914" download="eager" />
+    <jar href="lib\log4j-jcl-2.20.0-sources.jar" size="11928" download="eager" />
+    <jar href="lib\log4j-jcl-2.20.0.jar" size="12195" download="eager" />
+    <jar href="lib\log4j-jdbc-dbcp2-2.20.0-sources.jar" size="13644" download="eager" />
+    <jar href="lib\log4j-jdbc-dbcp2-2.20.0.jar" size="20621" download="eager" />
+    <jar href="lib\log4j-jmx-gui-2.20.0-sources.jar" size="18783" download="eager" />
+    <jar href="lib\log4j-jmx-gui-2.20.0.jar" size="25394" download="eager" />
+    <jar href="lib\log4j-jpa-2.20.0-sources.jar" size="36803" download="eager" />
+    <jar href="lib\log4j-jpa-2.20.0.jar" size="43613" download="eager" />
+    <jar href="lib\log4j-jpl-2.20.0-sources.jar" size="11651" download="eager" />
+    <jar href="lib\log4j-jpl-2.20.0.jar" size="13582" download="eager" />
+    <jar href="lib\log4j-kubernetes-2.20.0-sources.jar" size="16541" download="eager" />
+    <jar href="lib\log4j-kubernetes-2.20.0.jar" size="23276" download="eager" />
+    <jar href="lib\log4j-layout-template-json-2.20.0-sources.jar" size="142195" download="eager" />
+    <jar href="lib\log4j-layout-template-json-2.20.0.jar" size="231297" download="eager" />
+    <jar href="lib\log4j-mongodb3-2.20.0-sources.jar" size="16297" download="eager" />
+    <jar href="lib\log4j-mongodb3-2.20.0.jar" size="22284" download="eager" />
+    <jar href="lib\log4j-mongodb4-2.20.0-sources.jar" size="15051" download="eager" />
+    <jar href="lib\log4j-mongodb4-2.20.0.jar" size="19792" download="eager" />
+    <jar href="lib\log4j-osgi-2.20.0-sources.jar" size="7177" download="eager" />
+    <jar href="lib\log4j-osgi-2.20.0.jar" size="7468" download="eager" />
+    <jar href="lib\log4j-slf4j-impl-2.20.0-sources.jar" size="23061" download="eager" />
+    <jar href="lib\log4j-slf4j-impl-2.20.0.jar" size="23862" download="eager" />
+    <jar href="lib\log4j-slf4j2-impl-2.20.0-sources.jar" size="20852" download="eager" />
+    <jar href="lib\log4j-slf4j2-impl-2.20.0.jar" size="26430" download="eager" />
+    <jar href="lib\log4j-spring-boot-2.20.0-sources.jar" size="16644" download="eager" />
+    <jar href="lib\log4j-spring-boot-2.20.0.jar" size="22451" download="eager" />
+    <jar href="lib\log4j-spring-cloud-config-client-2.20.0-sources.jar" size="13369" download="eager" />
+    <jar href="lib\log4j-spring-cloud-config-client-2.20.0.jar" size="13921" download="eager" />
+    <jar href="lib\log4j-taglib-2.20.0-sources.jar" size="32569" download="eager" />
+    <jar href="lib\log4j-taglib-2.20.0.jar" size="31585" download="eager" />
+    <jar href="lib\log4j-to-jul-2.20.0-sources.jar" size="17228" download="eager" />
+    <jar href="lib\log4j-to-jul-2.20.0.jar" size="16945" download="eager" />
+    <jar href="lib\log4j-to-slf4j-2.20.0-sources.jar" size="17519" download="eager" />
+    <jar href="lib\log4j-to-slf4j-2.20.0.jar" size="21777" download="eager" />
+    <jar href="lib\log4j-web-2.20.0-sources.jar" size="29296" download="eager" />
+    <jar href="lib\log4j-web-2.20.0.jar" size="34816" download="eager" />
+    <jar href="lib\mail-5.1.2.jar" size="6275" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\okhttp-4.10.0.jar" size="782603" download="eager" />
+    <jar href="lib\okio-jvm-3.0.0.jar" size="350780" download="eager" />
+    <jar href="lib\opencensus-api-0.31.0.jar" size="355406" download="eager" />
+    <jar href="lib\orsoncharts-1.4-eval-nofx.jar" size="445025" download="eager" />
+    <jar href="lib\orsonpdf-1.6-eval.jar" size="72444" download="eager" />
+    <jar href="lib\poi-5.2.3.jar" size="2964641" download="eager" />
+    <jar href="lib\poi-excelant-5.2.3.jar" size="28800" download="eager" />
+    <jar href="lib\poi-ooxml-5.2.3.jar" size="2010497" download="eager" />
+    <jar href="lib\poi-ooxml-lite-5.2.3.jar" size="5898622" download="eager" />
+    <jar href="lib\reactfx-2.0-M5.jar" size="428541" download="eager" />
+    <jar href="lib\richtextfx-0.11.0-javadoc.jar" size="852130" download="eager" />
+    <jar href="lib\richtextfx-0.11.0.jar" size="291759" download="eager" />
+    <jar href="lib\servlet.jar" size="80054" download="eager" />
+    <jar href="lib\simplelatlng-1.3.0.jar" size="28960" download="eager" />
+    <jar href="lib\simplelatlng-1.4.0.jar" size="29135" download="eager" />
+    <jar href="lib\slf4j-api-2.0.7.jar" size="63635" download="eager" />
+    <jar href="lib\swtgraphics2d.jar" size="17492" download="eager" />
+    <jar href="lib\undofx-2.1.1.jar" size="27946" download="eager" />
+    <jar href="lib\wellbehavedfx-0.3.3.jar" size="60297" download="eager" />
+    <jar href="lib\xmlbeans-5.1.1.jar" size="2196526" download="eager" />
+    <jar href="lib\zxing-1.3.jar" size="201030" download="eager" />
+    <jar href="pidev.jar" size="128427" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="pidev" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pidev.Pidev"  name="pidev" />
+  <update check="always"/>
+</jnlp>

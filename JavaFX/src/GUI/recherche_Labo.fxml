@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="795.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Recherche_LaboController">
+    <stylesheets>
+        <URL value="@recherche_labo.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="choix" layoutX="206.0" layoutY="74.0" onAction="#select" prefHeight="32.0" prefWidth="96.0" promptText="choix" styleClass="mainFxmlClass" />
+      <TableView fx:id="laboTable" layoutX="15.0" layoutY="113.0" prefHeight="275.0" prefWidth="765.0" styleClass="mainFxmlClass">
+         <columns>
+            <TableColumn fx:id="nom_col" prefWidth="127.99996185302734" text="Nom" />
+            <TableColumn fx:id="bloc_col" prefWidth="107.20001220703125" text="Bloc" />
+            <TableColumn fx:id="email_col" minWidth="0.0" prefWidth="196.79998779296875" text="E-mail" />
+            <TableColumn fx:id="tel_col" prefWidth="154.39999389648438" text="Telephone" />
+            <TableColumn fx:id="med_col" prefWidth="176.800048828125" text="Medecin" />
+         </columns>
+      </TableView>
+      <TextField fx:id="rechercher" layoutX="337.0" layoutY="77.0" prefHeight="26.0" prefWidth="106.0" promptText="Rechercher" styleClass="mainFxmlClass" />
+      <Button fx:id="rechercherB" layoutX="482.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#rechercher_labo" prefHeight="32.0" prefWidth="96.0" styleClass="insert-button-V" text="rechercher" />
+      <Label fx:id="choix_label" layoutX="14.0" layoutY="14.0" prefHeight="19.0" prefWidth="54.0" style="-fx-text-fill: transparent;" text="Label">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.970370352268219" blue="0.970370352268219" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="pdfB" layoutX="234.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#telecharger_pdf" styleClass="mainFxmlClass" text="Telecharger PDF" />
+      <Button fx:id="excelB" layoutX="428.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#telecharger_excel" styleClass="mainFxmlClass" text="Telecharger Excel" />
+   </children>
+</AnchorPane>

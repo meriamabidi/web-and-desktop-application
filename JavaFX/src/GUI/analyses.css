@@ -1,0 +1,73 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+
+    .textfield-design{
+        
+        -fx-background-color:transparent;
+        -fx-background-radius:5px;
+        -fx-border-color:linear-gradient(to bottom right, #3a4f93, #a43189);
+        -fx-border-radius:5px;
+        -fx-font-size:15px;
+
+    }
+
+    .insert-image-button{
+
+        -fx-background-color:transparent;
+        -fx-text-fill:#3a4f93;
+        -fx-cursor:hand;
+        -fx-font-size:15px;
+
+    }
+
+
+
+}
+.insert-button-R:hover{
+
+
+    -fx-background-color:#ff0000;
+
+}
+.insert-button-R{
+    -fx-border-color:linear-gradient(to bottom right, #3a4f93, #a43189);
+    -fx-border-radius:5px;
+    -fx-font-size:15px;
+    -fx-background-radius:5px;
+    -fx-background-color:#3195d7;
+    -fx-text-fill: white;
+
+}
+
+
+.insert-button-V:hover{
+
+
+    -fx-background-color:#00FF00;
+
+}
+
+.insert-button-V{
+    -fx-border-color:linear-gradient(to bottom right, #3a4f93, #a43189);
+    -fx-border-radius:5px;
+    -fx-font-size:15px;
+    -fx-background-radius:5px;
+    -fx-background-color:#3195d7;
+    -fx-text-fill: white;
+
+}
+
+.clear-button{
+    -fx-border-color:linear-gradient(to bottom right, #3a4f93, #a43189);
+    -fx-border-radius:5px;
+    -fx-font-size:15px;
+    -fx-background-radius:5px;
+    -fx-background-color:transparent;
+    -fx-text-fill:#e49696;
+    -fx-alignment: center;
+
+}
